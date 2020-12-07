@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Dashboards"
-subtitle: "Building dashboards with flexdashboards"
-comment: "*building dashboards with flexdashboards*"
+subtitle: "BMRN CSM: Building dashboards with R markdown"
+comment: "*building dashboards with flexdashboard*"
 date: '`r Sys.Date()`'
 author: 
   - "Martin Frigaard"
@@ -56,7 +56,8 @@ background-size: 8%
 <br><br><br><br>
 
 ```{r packages, eval=FALSE}
-install.packages(c("tidyverse", "inspectdf", "flexdashboard", "reactable")
+install.packages(c("tidyverse", "inspectdf", 
+                   "flexdashboard", "reactable")
 library(tidyverse)
 library(inspectdf)
 library(flexdashboard)
@@ -76,13 +77,13 @@ background-image: url(img/rmarkdown.png)
 background-position: 95% 8%
 background-size: 8%
 
-## Outline
+# Outline (1)
 
-.pull-left[
+
 
 ###  Recap `rmarkdown`
 
-### What belongs in a dashboard?
+### *What belongs in a dashboard*?
 
 ### Layouts
 
@@ -91,9 +92,14 @@ background-size: 8%
 
 ### Themes 
 
-]
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
 
-.pull-right[
+# Outline (2)
+
 
 ### `inspectdf` package 
 
@@ -106,8 +112,6 @@ background-size: 8%
 ### Downloading and uploading files
 
   - *shiny reactivity*
-
-]
 
 
 ---
