@@ -538,15 +538,17 @@ background-position: 95% 8%
 background-size: 8%
 
 
-# Your Turn 4 
+# Sidebar
 
 ## Add the data to the `.sidebar` 
 
-Add the import and wrangle code to the sidebar in the dashboard.
+Add the `import` and `wrangle` code to the sidebar in the dashboard.
 
 
 ```r
+# import ----
 AppleMobRaw &lt;- readr::read_csv("https://bit.ly/36tTVpe")
+# wrangle ----
 AppleMobRaw %&gt;% 
   # transpose data 
   tidyr::pivot_longer(cols = -c(geo_type:country), 
@@ -569,9 +571,9 @@ background-position: 95% 8%
 background-size: 8%
 
 
-# Your Turn 5
+# Page 1, Column 1, Tab 1
 
-## Add the `Memory Size` graph to the flexdashboard
+## Add the '`Memory Size`' Graph
 
 Add this code to `A1`
 
@@ -592,9 +594,9 @@ background-position: 95% 8%
 background-size: 8%
 
 
-# Your Turn 6
+# Page 1, Column 1, Tab 2
 
-## Add the `Missing Data` graph to the flexdashboard
+## Add the `Missing Data` Graph
 
 Add this code to `A2`
 
@@ -615,7 +617,7 @@ background-position: 95% 8%
 background-size: 8%
 
 
-# Your Turn 7
+# Page 1, Column 2, Tab 1
 
 ### Add the `Categorical Data` Graph 
 
@@ -638,13 +640,11 @@ background-position: 95% 8%
 background-size: 8%
 
 
-# Your Turn 8
+# Page 1, Column 2, Tab 2
 
-### Create Another Tab with `.tabset`
+### Add the `Data Imbalances` Graph 
 
-### Add `Data Imbalances` Graph 
-
-Add the code below for  page 1, row 2, tab 2.
+Add this code to `B2`
 
 
 ```r
@@ -662,12 +662,36 @@ background-position: 95% 8%
 background-size: 8%
 
 
-## Page 2 (tab 1)
+# Page 1
+
+&lt;img src="img/page-1-sol.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+
+## Page 2 (Rows)
+
 
 ```
 Page 2 {data-orientation=rows}
 =======================================
 ```
+
+
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+
+## Page 2, Row 1, Tab 1
+
 
 ### Create a `.tabset`/`.tabset-fade` Row
 
@@ -690,12 +714,12 @@ TidyApple %&gt;%
 
 ---
 class: left, top
-background-image: url(img/inspectdf.png)
+background-image: url(img/rmarkdown.png)
 background-position: 95% 8%
 background-size: 8%
 
 
-# Page 2 (tab 2)
+## Page 2, Row 1, Tab 2
 
 ### Add 'Distributions `ggridges`' Graph 
 
@@ -725,7 +749,7 @@ background-image: url(img/rmarkdown.png)
 background-position: 95% 8%
 background-size: 8%
 
-## Display tables (`rmarkdown`)
+## Page 2, Row 2, Tab 1
 
 ### Create Another `.tabset`/`.tabset-fade` Row
 
@@ -745,13 +769,15 @@ TopUSCities &lt;- TidyApple %&gt;%
 rmarkdown::paged_table(TopUSCities)
 ```
 
+## Knit--how does it look?
+
 ---
 class: left, top
 background-image: url(img/rmarkdown.png)
 background-position: 95% 8%
 background-size: 8%
 
-## Display tables (`reactable`)
+## Page 2, Row 2, Tab 2
 
 ### In tab 2, add `MaxUSCitiesDriving` as `reactable`
 
@@ -767,6 +793,31 @@ reactable(MaxUSCitiesDriving,
               resizable = TRUE, showPageSizeOptions = TRUE, 
               selection = "multiple", onClick = "select")
 ```
+
+## Knit--how does it look?
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+
+# Page 2
+
+&lt;img src="img/page-2-sol-1.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+
+# Page 2
+
+&lt;img src="img/page-2-sol-3.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+
 
 ---
 class: left, top
