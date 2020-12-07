@@ -1,0 +1,132 @@
+---
+title: "Introduction to Dashboards"
+subtitle: "Building dashboards with flexdashboards"
+comment: "*building dashboards with flexdashboards*"
+date: '`r Sys.Date()`'
+author: 
+  - "Martin Frigaard"
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(reprex)
+library(xaringan)
+library(pagedown)
+library(xaringanthemer)
+# folders
+folders <- c("code", "data", "img", "pdfs")
+purrr::map(.x = folders, .f = fs::dir_create)
+knitr::opts_chunk$set(warning = FALSE, 
+                      message = FALSE, 
+                      fig.align = "center", 
+                      dpi = 320, 
+                      fig.height = 4, 
+                      fig.path = "img/")
+options(width = 60, 
+        max.print = 60)
+download.file(url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/rmarkdown.png", destfile = "img/rmarkdown.png")
+```
+
+```{r xaringan-themer-and-xaringan-inf_mr(), include=FALSE, warning=FALSE}
+xaringanthemer::style_duo_accent(primary_color = "#035AA6", secondary_color = "#03A696")
+# xaringan::inf_mr() # use for instant knitting and reviewing
+```
+
+class: inverse, center, top
+background-image: url(img/rmarkdown.png)
+background-position: 50% 70%
+background-size: 35%
+
+# `flexdashboard` = Dashboards using R Markdown (and Shiny)
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+# Load the packages 
+
+<br><br><br><br>
+
+```{r packages, eval=FALSE}
+install.packages(c("tidyverse", "inspectdf", "flexdashboard", "reactable")
+library(tidyverse)
+library(inspectdf)
+library(flexdashboard)
+library(reactable)
+```
+
+```{r pckgs, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(inspectdf)
+library(flexdashboard)
+library(reactable)
+```
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+## Outline
+
+.pull-left[
+
+###  Recap `rmarkdown`
+
+### What belongs in a dashboard?
+
+### Layouts
+
+  - *Sidebars, Columns, and Rows*  
+  - *Multiple Pages, Tabs*
+
+### Themes 
+
+]
+
+.pull-right[
+
+### `inspectdf` package 
+
+  - *graphs, syntax* 
+
+### `reactable` package 
+
+  - *table displays*
+
+### Downloading and uploading files
+
+  - *shiny reactivity*
+
+]
+
+
+---
+class: left, top
+background-image: url(img/rmarkdown.png)
+background-position: 95% 8%
+background-size: 8%
+
+# Materials
+
+## Slides 
+
+https://mjfrigaard.github.io/data-viz-as-comm/Index.html
+
+## Exercises 
+
+https://mjfrigaard.github.io/r-meetup-tutorials/gg01_data-viz-as-comm.html
+
+## RStudio Project
+
+https://rstudio.cloud/project/1983257
+
