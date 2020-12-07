@@ -128,9 +128,6 @@ https://mjfrigaard.github.io/intro-to-dashboards/Index.html
 
 ## Exercises 
 
-https://mjfrigaard.github.io/r-meetup-tutorials/gg01_data-viz-as-comm.html
 
 ## RStudio Project
-
-https://rstudio.cloud/project/1983257
 
