@@ -124,7 +124,7 @@ background-size: 8%
 
 ## Slides 
 
-https://mjfrigaard.github.io/data-viz-as-comm/Index.html
+https://mjfrigaard.github.io/intro-to-dashboards/Index.html
 
 ## Exercises 
 
