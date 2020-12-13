@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Dashboards"
-subtitle: "BMRN CSM: Building dashboards with R markdown"
+subtitle: "bmRn CSM: Building dashboards with R Markdown"
 comment: "*building dashboards with flexdashboard*"
 date: '`r Sys.Date()`'
 author: 
